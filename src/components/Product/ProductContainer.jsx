@@ -1,50 +1,59 @@
 import React from "react";
 import styled from "styled-components";
-// import { wineList } from "../../data";
 import { filterState } from "../../stores/atom";
 import { useRecoilValue } from "recoil";
+import {mobile} from "../../responsive";
 
 const Container = styled.div`
   display: flex;
-  padding: 20px;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 100px;
+  ${mobile({
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    flexWrap: "wrap",
+    gap: "2em",
+  })}
 `;
 const ProductCard = styled.div`
-  height: 100%;
-  padding: 10% 5% 10% 5%;
-  display: flex;
-  justify-content: center;
-  background-image: url("https://github.com/congreves/viovin-ecommerce/blob/main/src/assets/Benezet%20(22).jpg");
+display: flex;
+flex-direction: row;
+  flex: 100%;
+  max-width: 40%;
+  height: auto;
+  padding: 1.5em;
+  ${mobile({ flex: "40%", maxWidth: "50%", flexDirection: "column", })}
 `;
 
 const Image = styled.img`
-  height: 55%;
-  max-width: 75%;
-  z-index: 2;
+width: 100%;
+height: auto;
+${mobile({ margin: "0px", width: "100%",})}
+ 
 `;
 const Info = styled.div`
-  height: 55%;
-  max-width: 75%;
   z-index: 2;
-  display: flex;
-  flex-direction: column;
-  padding: 1.5em;
+  width: 50%;
+  height: auto;
+  ${mobile({ flex: "40%", width: "100%" })}
+
 `;
 const Subtitle = styled.h4`
-  padding: 1.5em;
+padding-bottom: 1.5em;
 `;
 const Title = styled.h1`
-  padding: 1.5em;
+padding-bottom: 1.5em;
 `;
 const Year = styled.h5`
-  padding: 1.5em;
+padding-bottom: 1.5em;
 `;
 const Sort = styled.h6`
-  padding: 1.5em;
+padding-bottom: 1.5em;
 `;
 const Description = styled.p`
-  padding: 1.5em;
+padding-bottom: 1.5em;
 `;
 
 function ProductContainer() {
