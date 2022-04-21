@@ -10,52 +10,91 @@ const Categories = styled.div`
   display: flex;
 `;
 
-const Filter = styled.ul``;
+const Filter = styled.ul`
+  display: flex;
+  flex-direction: row;
+  gap: 1.4em;
+`;
 
 const FilterOption = styled.li`
   display: flex;
 `;
 
 function ProductsPage() {
-  const [filter, setFilter] = useRecoilState(filterState)
+  const [filter, setFilter] = useRecoilState(filterState);
   const [categoryFilter, setCategoryFilter] = useState("none");
 
   const filterList = wineList.filter((wine) => {
     if (categoryFilter === "none") {
-     
       return true;
     }
     if (wine.category === categoryFilter) {
-
       return true;
     } else {
-    
       return false;
     }
   });
 
   useEffect(() => {
-    setFilter(filterList)
-  },[categoryFilter])
+    setFilter(filterList);
+  }, [categoryFilter]);
 
   return (
     <div>
       <Navbar />
-
       <Categories>
         <Filter>
-          Sort
-          <FilterOption name="red" onClick={(e) => console.log (e.target.name)}>Red</FilterOption>
-          <FilterOption value="white" onClick={(e) => setCategoryFilter (e.target.value)}>White</FilterOption>
-          <FilterOption value={categoryFilter} onClick={(e) => setCategoryFilter (e.target.value)}>Rose</FilterOption>
+          Filter by:
+          <FilterOption
+            id="red"
+            onClick={(e) => setCategoryFilter(e.target.id)}
+            style={
+              categoryFilter === "red"
+                ? { color: "#9B753A", fontWeight: "500" }
+                : {}
+            }
+          >
+            Red
+          </FilterOption>
+          <FilterOption
+            id="white"
+            onClick={(e) => setCategoryFilter(e.target.id)}
+            style={
+              categoryFilter === "white"
+                ? { color: "#9B753A", fontWeight: "500" }
+                : {}
+            }
+          >
+            White
+          </FilterOption>
+          <FilterOption
+            id="rose"
+            onClick={(e) => setCategoryFilter(e.target.id)}
+            style={
+              categoryFilter === "rose"
+                ? { color: "#9B753A", fontWeight: "500" }
+                : {}
+            }
+          >
+            Rose
+          </FilterOption>
+          <FilterOption
+            onClick={() => setCategoryFilter("none")}
+            style={
+              categoryFilter === "none"
+                ? { color: "#9B753A", fontWeight: "500" }
+                : {}
+            }
+          >
+            See all
+          </FilterOption>
         </Filter>
-
-        <Filter>
+        {/* <Filter>
           Producent
           <FilterOption>A</FilterOption>
           <FilterOption>B</FilterOption>
           <FilterOption>C</FilterOption>
-        </Filter>
+        </Filter> */}
       </Categories>
       <ProductContainer />
     </div>

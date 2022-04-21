@@ -106,8 +106,8 @@ function Navbar() {
         <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
           </Link>
-          <Link to="/" style={linkStyle}>
-            <MenuItem>OM OSS</MenuItem>
+          <Link to="/viovin" style={linkStyle}>
+            <MenuItem >OM OSS</MenuItem>
           </Link>
          <MenuItem>
           <Button>KONTAKTA</Button>
