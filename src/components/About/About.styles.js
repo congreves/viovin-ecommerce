@@ -4,7 +4,8 @@ import { mobile } from "../../responsive";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  ${mobile({height: "100%", padding: "0px", flexWrap: "wrap", flexDirection: "column-reverse", alignItems: "center", justifyContent: "center"})}
+  height: 100%;
+  ${mobile({width: "100%", padding: "0px", flexWrap: "wrap", flexDirection: "column-reverse", alignItems: "center", justifyContent: "center"})}
 `;
 export const ImageContainer = styled.div`
   margin-left: 5%;
@@ -29,7 +30,7 @@ export const BannerContainer = styled.div`
   margin-right: 5%;
   width: 100%;
   height: auto;
-  ${mobile({ padding: "2em 2em",flexWrap: "wrap" })}
+  ${mobile({margin: "0px", padding: "2em 2em",flexWrap: "wrap" })}
 `;
 
 export const BannerTitle = styled.h1`
