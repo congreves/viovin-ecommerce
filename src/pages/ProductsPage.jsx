@@ -10,12 +10,12 @@ const Categories = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6.5em;
+  top: 8em;
+  padding-top: 1.5em;
   padding-left: 5%;
   padding-right: 5%;
   background-color: transparent;
   position: sticky;
-  top: 0;
   width: 100%;
   z-index: 99;
   backdrop-filter: blur(50px);
@@ -56,24 +56,31 @@ function ProductsPage() {
       <Navbar />
       <Categories>
         <Filter>
-         
           <FilterOption
-            id="red"
-            onClick={(e) => setCategoryFilter(e.target.id)}
+            onClick={() => setCategoryFilter("none")}
             style={
-              categoryFilter === "red"
-                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline"}
+              categoryFilter === "none"
+                ? {
+                    color: "#9B753A",
+                    fontWeight: "600",
+                    textDecoration: "underline",
+                  }
                 : {}
             }
           >
-            Red
+           All
           </FilterOption>
+
           <FilterOption
             id="white"
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "white"
-                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline"}
+                ? {
+                    color: "#9B753A",
+                    fontWeight: "600",
+                    textDecoration: "underline",
+                  }
                 : {}
             }
           >
@@ -84,21 +91,31 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "rose"
-                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline" }
+                ? {
+                    color: "#9B753A",
+                    fontWeight: "600",
+                    textDecoration: "underline",
+                  }
                 : {}
             }
           >
             Rose
           </FilterOption>
+
           <FilterOption
-            onClick={() => setCategoryFilter("none")}
+            id="red"
+            onClick={(e) => setCategoryFilter(e.target.id)}
             style={
-              categoryFilter === "none"
-                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline" }
+              categoryFilter === "red"
+                ? {
+                    color: "#9B753A",
+                    fontWeight: "600",
+                    textDecoration: "underline",
+                  }
                 : {}
             }
           >
-            See all
+            Red
           </FilterOption>
         </Filter>
         {/* <Filter>

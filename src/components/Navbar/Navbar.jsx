@@ -13,6 +13,7 @@ const Container = styled.div`
   z-index: 100;
   backdrop-filter: blur(50px);
 
+
 `;
 const Wrapper = styled.div`
   height: 8em;
