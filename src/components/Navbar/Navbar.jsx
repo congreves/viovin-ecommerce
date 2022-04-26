@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #9b753a;
+  align-items: center;
 `;
 
 const Center = styled.div`
@@ -97,7 +98,7 @@ setNavbarOpen(!navbarOpen)
             <Logo src="https://i.ibb.co/kDLkfBx/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-removebg-preview.png"></Logo>
           </Link>
         </Center>
-       <GiHamburgerMenu size={44} onClick={handleToggle}/>
+       <GiHamburgerMenu size={44}  onClick={handleToggle}/>
         <Menu navbarOpen={navbarOpen}>
           <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
