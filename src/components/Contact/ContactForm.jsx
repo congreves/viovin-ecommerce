@@ -80,7 +80,7 @@ function ContactForm() {
     <div>
       <Container>
       
-        <Form  >
+        <Form action="https://formsubmit.co/congreves3@gmail.com" method="POST" >
           <Title>KONTAKTA OSS</Title>
           <ContactInfo>
             <Label>Namn</Label>
@@ -92,18 +92,19 @@ function ContactForm() {
             <Label>Email</Label>
             <Input
               placeholder="Skriv in email"
-              email="emailadress"
-              type="text"
+              type="email"
+              name="email"
             ></Input>
             <Label>Företag /Privatperson</Label>
             <Input
               placeholder="Skriv in företag/privatperson"
               type="text"
+              name="företag"
             ></Input>
           </ContactInfo>
           <Message>
             <Label>Meddelande</Label>
-            <Input placeholder="Lämna ett meddelande här.." type="text"></Input>
+            <Input placeholder="Lämna ett meddelande här.." type="text" name="meddelande"></Input>
             <Button type="submit" value="Submit">SKICKA</Button>
           </Message>
           

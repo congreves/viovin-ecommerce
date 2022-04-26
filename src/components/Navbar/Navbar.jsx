@@ -10,7 +10,7 @@ const Container = styled.div`
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   backdrop-filter: blur(50px);
 
 `;
@@ -27,6 +27,7 @@ const Center = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 `;
 const linkStyle = {
   textDecoration: "none",
@@ -51,6 +52,7 @@ const Menu = styled.div`
   gap:1.5em;
   opacity:${props => props.navbarOpen ? '100%' : '0%' };
   transition: all 0.2s;
+  z-index: 100;
 `;
 
 const MenuItem = styled.p`

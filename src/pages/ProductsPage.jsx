@@ -10,9 +10,15 @@ const Categories = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 2.5em;
+  padding-top: 6.5em;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  backdrop-filter: blur(50px);
 `;
 
 const Filter = styled.ul`
@@ -23,6 +29,7 @@ const Filter = styled.ul`
 
 const FilterOption = styled.li`
   display: flex;
+  font-size: 1.4rem;
 `;
 
 function ProductsPage() {
@@ -49,13 +56,13 @@ function ProductsPage() {
       <Navbar />
       <Categories>
         <Filter>
-          Filter by:
+         
           <FilterOption
             id="red"
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "red"
-                ? { color: "#9B753A", fontWeight: "800" }
+                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline"}
                 : {}
             }
           >
@@ -66,7 +73,7 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "white"
-                ? { color: "#9B753A", fontWeight: "800" }
+                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline"}
                 : {}
             }
           >
@@ -77,7 +84,7 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "rose"
-                ? { color: "#9B753A", fontWeight: "800" }
+                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline" }
                 : {}
             }
           >
@@ -87,7 +94,7 @@ function ProductsPage() {
             onClick={() => setCategoryFilter("none")}
             style={
               categoryFilter === "none"
-                ? { color: "#9B753A", fontWeight: "800" }
+                ? { color: "#9B753A", fontWeight: "600", textDecoration: "underline" }
                 : {}
             }
           >

@@ -44,7 +44,7 @@ const Title = styled.h2`
   display: flex;
   padding: 20px 20px;
 `;
-const ContactItem = styled.div`
+const ContactItem = styled.a`
   display: flex;
   align-items: center;
   padding: 20px 20px;
@@ -77,9 +77,9 @@ function Footer() {
             <Phone style={{ marginRight: "10px" }} />
             phonenumber
           </ContactItem>
-          <ContactItem>
+          <ContactItem href="mailto: info@viovin.se">
             <MailOutlined style={{ marginRight: "10px" }} />
-            email
+            info@viovin.se
           </ContactItem>
         </Right>
       </Wrapper>
