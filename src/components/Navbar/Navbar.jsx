@@ -60,7 +60,7 @@ const Menu = styled.div`
   z-index: 100;
   width: 50%;
   height: 100vh;
-  ${mobile({ width: "100%", overflow: "relative"})}
+  ${mobile({ width: "100%", })}
 `;
 
 const MenuItem = styled.p`
