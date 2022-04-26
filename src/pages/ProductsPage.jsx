@@ -8,6 +8,11 @@ import { filterState } from "../stores/atom";
 
 const Categories = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2.5em;
 `;
 
 const Filter = styled.ul`
@@ -50,7 +55,7 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "red"
-                ? { color: "#9B753A", fontWeight: "500" }
+                ? { color: "#9B753A", fontWeight: "800" }
                 : {}
             }
           >
@@ -61,7 +66,7 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "white"
-                ? { color: "#9B753A", fontWeight: "500" }
+                ? { color: "#9B753A", fontWeight: "800" }
                 : {}
             }
           >
@@ -72,7 +77,7 @@ function ProductsPage() {
             onClick={(e) => setCategoryFilter(e.target.id)}
             style={
               categoryFilter === "rose"
-                ? { color: "#9B753A", fontWeight: "500" }
+                ? { color: "#9B753A", fontWeight: "800" }
                 : {}
             }
           >
@@ -82,7 +87,7 @@ function ProductsPage() {
             onClick={() => setCategoryFilter("none")}
             style={
               categoryFilter === "none"
-                ? { color: "#9B753A", fontWeight: "500" }
+                ? { color: "#9B753A", fontWeight: "800" }
                 : {}
             }
           >

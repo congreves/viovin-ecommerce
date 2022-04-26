@@ -7,30 +7,40 @@ import {mobile} from "../../responsive";
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 5em;
   margin-top: 100px;
   ${mobile({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     flexWrap: "wrap",
-    gap: "2em",
+    gap: "5em",
   })}
 `;
 const ProductCard = styled.div`
-display: flex;
 flex-direction: row;
-  flex: 100%;
+display: flex;
   max-width: 40%;
   height: auto;
   padding: 1.5em;
-  ${mobile({ flex: "40%", maxWidth: "50%", flexDirection: "column", })}
+  flex-grow : 1;
+  ${mobile({ flex: "40%", minWidth: "100%", flexDirection: "column", })}
 `;
 
+const ImageContainer = styled.div`
+width: 50%;
+height: auto;
+
+${mobile({ margin: "0px", width: "100%",})}
+ 
+`;
 const Image = styled.img`
 width: 100%;
 height: auto;
-${mobile({ margin: "0px", width: "100%",})}
+object-fit: cover;
+
  
 `;
 const Info = styled.div`
