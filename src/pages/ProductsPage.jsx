@@ -68,7 +68,7 @@ function ProductsPage() {
                 : {}
             }
           >
-           All
+           Alla
           </FilterOption>
 
           <FilterOption
@@ -84,7 +84,7 @@ function ProductsPage() {
                 : {}
             }
           >
-            White
+            Vitt
           </FilterOption>
           <FilterOption
             id="rose"
@@ -99,7 +99,7 @@ function ProductsPage() {
                 : {}
             }
           >
-            Rose
+            Rosé
           </FilterOption>
 
           <FilterOption
@@ -115,7 +115,7 @@ function ProductsPage() {
                 : {}
             }
           >
-            Red
+            Rött
           </FilterOption>
         </Filter>
         {/* <Filter>

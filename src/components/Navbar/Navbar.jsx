@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
   padding-left: 5%;
@@ -12,7 +13,7 @@ const Container = styled.div`
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(50px);
-
+  ${mobile({ padding: " 0% 2%"})}
 
 `;
 const Wrapper = styled.div`
@@ -22,6 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #9b753a;
   align-items: center;
+  ${mobile({ padding: "0.5em 0.5em 0.5em 0em"})}
 `;
 
 const Center = styled.div`
@@ -30,6 +32,7 @@ const Center = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 100;
+  ${mobile({ justifyContent: "start", paddingTop: "0.5em"})}
 `;
 const linkStyle = {
   textDecoration: "none",
@@ -39,6 +42,7 @@ const linkStyle = {
 
 const Logo = styled.img`
   max-height: 10em;
+  ${mobile({ maxHeight: "8em"})}
 `;
 
 
@@ -46,42 +50,30 @@ const Menu = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 0;
   top: 8em;
   background-color: white;
   backdrop-filter: blur(50px);
-  padding: 1.5em;
-  gap:1.5em;
-  opacity:${props => props.navbarOpen ? '100%' : '0%' };
-  transition: all 0.2s;
+  padding: 3.5em 1.5em;
+  gap:3.5em;
+  transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(100%)' : 'translateX(250%)'};
+  transition: all 0.4s;
   z-index: 100;
+  width: 50%;
+  height: 100vh;
+  ${mobile({ width: "100%", overflow: "relative"})}
 `;
 
 const MenuItem = styled.p`
-  font-size: 18px;
+  font-size: 2.5rem;
   cursor: pointer;
   color: #9b753a;
   letter-spacing: 0.05;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
+  border-bottom: 1px solid #9b753a;
+  ${mobile({ fontSize: "2rem", paddingTop: "0.5em"})}
+
 `;
-const Button = styled.button`
-  align-items: center;
-  background-color: transparent;
-  border: 0.1px solid #9b753a;
-  border-radius: 0.25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  color: #9b753a;
-  cursor: pointer;
-  display: inline-flex;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
-`;
+
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -99,7 +91,7 @@ setNavbarOpen(!navbarOpen)
             <Logo src="https://i.ibb.co/kDLkfBx/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-removebg-preview.png"></Logo>
           </Link>
         </Center>
-       <GiHamburgerMenu size={44}  onClick={handleToggle}/>
+       <GiHamburgerMenu style={{fontWeight: "200"}}size={44}  onClick={handleToggle}/>
         <Menu navbarOpen={navbarOpen}>
           <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
@@ -108,7 +100,7 @@ setNavbarOpen(!navbarOpen)
             <MenuItem>OM OSS</MenuItem>
           </Link>
           <MenuItem>
-            <Button>KONTAKTA</Button>
+            KONTAKT
           </MenuItem>
         </Menu>
      

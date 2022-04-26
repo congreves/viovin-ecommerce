@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 const BannerContainer = styled.div`
   height: 70vh;
@@ -10,6 +11,7 @@ const BannerContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
 `;
 const BannerImage = styled.div`
   max-width: 50%;
@@ -20,10 +22,11 @@ const BannerText = styled.h1`
   margin-right: 5%;
   font-family: "Fraunces", serif;
   color: white;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 200;
   font-style: italic;
   text-align: center;
+  ${mobile({ fontSize: "1.5rem", paddingTop: "2.5em"})}
 `;
 
 function Banner() {

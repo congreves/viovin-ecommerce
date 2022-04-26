@@ -4,15 +4,13 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-  height: 100%;
-  padding: 10% 5% 10% 5%;
   display: flex;
   justify-content: center;
-  background-image: url("https://github.com/congreves/viovin-ecommerce/blob/main/src/assets/Benezet%20(22).jpg");
+
   
 `;
 const Form = styled.form`
-  width: 30%;
+ 
   padding: 3em 2em 3em 2em;
   border-radius: 1em 0 0 1em;
   background: rgba(255, 255, 255, 0.25);
@@ -109,7 +107,7 @@ function ContactForm() {
           </Message>
           
         </Form>
-        <ImageContainer src="/src/assets/Benezet (22).jpg"></ImageContainer>
+        <ImageContainer></ImageContainer>
       </Container>
     </div>
   );
