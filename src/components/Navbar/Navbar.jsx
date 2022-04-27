@@ -13,7 +13,7 @@ const Container = styled.div`
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(50px);
-  ${mobile({ padding: " 0% 2%"})}
+  ${mobile({ paddingLeft: " 0%"})}
 
 `;
 const Wrapper = styled.div`
@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #9b753a;
   align-items: center;
-  ${mobile({ padding: "0.5em 0.5em 0.5em 0em"})}
+  ${mobile({ padding: "0.5em 0.5em 0.5em 0em", borderBottom: "none"})}
 `;
 
 const Center = styled.div`
@@ -32,17 +32,19 @@ const Center = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 100;
-  ${mobile({ justifyContent: "start", paddingTop: "0.5em"})}
+  ${mobile({ justifyContent: "start"})}
 `;
 const linkStyle = {
   textDecoration: "none",
   margin: 0,
   letterSpacing: 0.5,
+  backgroundColor: "white",
+backdropFilter: "blur(50px)",
 };
 
 const Logo = styled.img`
   max-height: 10em;
-  ${mobile({ maxHeight: "8em"})}
+  ${mobile({ maxHeight: "7.3em"})}
 `;
 
 
@@ -60,17 +62,20 @@ const Menu = styled.div`
   z-index: 100;
   width: 50%;
   height: 100vh;
-  ${mobile({ width: "100%", })}
+  ${mobile({maxWidth: "80%",
+    height: "100vh", marginRight:"9.5em"})}
 `;
 
 const MenuItem = styled.p`
+background-color: white;
+backdrop-filter: blur(50px);
   font-size: 2.5rem;
   cursor: pointer;
   color: #9b753a;
   letter-spacing: 0.05;
   padding: 1em;
   border-bottom: 1px solid #9b753a;
-  ${mobile({ fontSize: "2rem", paddingTop: "0.5em"})}
+  ${mobile({ fontSize: "1rem", paddingTop: "0.5em"})}
 
 `;
 

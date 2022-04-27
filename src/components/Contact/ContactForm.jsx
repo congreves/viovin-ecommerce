@@ -1,25 +1,39 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../responsive"
 
 
 
 const Container = styled.div`
   display: flex;
   justify-content: center;
+  border-radius: 1em 0 0 1em;
+  overflow: hidden;
+  padding: 2.5em 0em;
 
-  
+
 `;
 const Form = styled.form`
- 
-  padding: 3em 2em 3em 2em;
-  border-radius: 1em 0 0 1em;
+ display: flex:
+ flex-direction: column:
   background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset -8px -8px 16px rgba(239, 239, 239, 0.35), inset 8px 8px 16px rgba(163, 181, 208, 0.39);
+  border-radius: 40px;
+  width: 50%;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  ${mobile({ width: " 100%"})}
+
  
 `;
 const Title = styled.h2`
-  display: block;
-  padding: 1em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 200;
+  margin: 0;
 `;
 const ContactInfo = styled.div`
   display: flex;
@@ -39,22 +53,25 @@ const Input = styled.input`
   width: 100%;
   padding: 1em 1em;
   height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+box-shadow: inset -8px -8px 16px rgba(239, 239, 239, 0.35), inset 8px 8px 16px rgba(163, 181, 208, 0.39);
+border-radius: 40px;
 `;
 const Message = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 1em 1em;
+  
  
  
 `;
 const Button = styled.button`
 width: 50%;
 background-color: transparent;
-border: 0.1px solid #8C7DA2;
+border: 0.1px solid #9b753a;
 border-radius: .25rem;
 box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-color: #8C7DA2;
 cursor: pointer;
 display: flex;
 font-size: 16px;
@@ -64,12 +81,11 @@ line-height: 1.25;
 margin-top: 2em;
 min-height: 3rem;
 align-items: center;
-`
+color: #9b753a;
 
-const ImageContainer = styled.img`
-width: 70%;
-border-radius: 0 1em 1em 0 ;
-`
+`;
+
+
 
 
 
@@ -103,14 +119,16 @@ function ContactForm() {
           <Message>
             <Label>Meddelande</Label>
             <Input placeholder="Lämna ett meddelande här.." type="text" name="meddelande"></Input>
-            <Button type="submit" value="Submit">SKICKA</Button>
+            
           </Message>
-          
+          <Button type="submit" value="Submit">SKICKA</Button>
         </Form>
-        <ImageContainer></ImageContainer>
+       
       </Container>
     </div>
   );
 }
 
 export default ContactForm;
+ /*<ImageContainer src="https://i.ibb.co/3RbSwLY/Benezet-42.jpg" alt="Benezet-42" border="0">
+          </ImageContainer> */
