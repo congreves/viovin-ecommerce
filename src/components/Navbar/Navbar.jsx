@@ -55,14 +55,14 @@ const Menu = styled.div`
   top: 8em;
   background-color: white;
   backdrop-filter: blur(50px);
-  padding: 3.5em 1.5em;
-  gap:3.5em;
+  padding: 1.5em 1.5em;
+  gap:1.5em;
   transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(100%)' : 'translateX(250%)'};
   transition: all 0.4s;
   z-index: 100;
-  width: 50%;
+  width: 60%;
   height: 100vh;
-  ${mobile({maxWidth: "80%",
+  ${mobile({width: "50%",
     height: "100vh"})}
 `;
 
