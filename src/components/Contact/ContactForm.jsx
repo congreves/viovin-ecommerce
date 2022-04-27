@@ -7,11 +7,11 @@ import { mobile } from "../../responsive"
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  border-radius: 1em 0 0 1em;
   overflow: hidden;
-  padding: 2.5em 0em;
-
-
+  padding: 3.5em 0em;
+  margin-top: 3.5em;
+  border-top: 1px solid #9b753a;
+  ${mobile({ marginTop: "0.5", padding: "0.5em"})}
 `;
 const Form = styled.form`
  display: flex:
@@ -24,7 +24,7 @@ const Form = styled.form`
   padding: 2em;
   justify-content: center;
   align-items: center;
-  ${mobile({ width: " 100%"})}
+  ${mobile({ width: " 100%", padding: "0.5em"})}
 
  
 `;
@@ -34,6 +34,7 @@ const Title = styled.h2`
   justify-content: center;
   font-weight: 200;
   margin: 0;
+  ${mobile({ paddingTop: "1.5em"})}
 `;
 const ContactInfo = styled.div`
   display: flex;
@@ -41,6 +42,7 @@ const ContactInfo = styled.div`
   justify-content: flex-start;
   align-items: left;
   padding: 1em 1em;
+  ${mobile({ padding: "0.5em"})}
 `;
 const Label = styled.label`
   flex: 1;
@@ -62,7 +64,7 @@ const Message = styled.div`
   flex-direction: column;
   flex: 1;
   padding: 1em 1em;
-  
+  ${mobile({ width: " 100%", paddingTop: "0.5em"})}
  
  
 `;
@@ -82,7 +84,8 @@ margin-top: 2em;
 min-height: 3rem;
 align-items: center;
 color: #9b753a;
-
+padding: 1em 1em;
+${mobile({ width: " 70%", margin: "1em"})}
 `;
 
 

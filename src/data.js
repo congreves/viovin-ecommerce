@@ -3,7 +3,7 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/59Mr9Pq/3-Chateau-Bellefontaine-blanc.jpg" ,
+      img: "https://i.ibb.co/kQ3j1dp/4-Chateau-Bellefontaine-rose-removebg-preview.png" ,
       title: "Bellefontaine Rosé",
       subtitle: "AOP COSTIERES DE NÎMES",
       desc: "50%  GRENACHE NOIR + 40% SYRAH + 10% VIOGNIER",
@@ -11,7 +11,7 @@ export const sliderItems = [
     },
     {
       id: 2,
-      img: "https://i.ibb.co/0nVxPvt/3-Chateau-Bellefontaine-blanc.jpg",
+      img: "https://i.ibb.co/VwFZP5X/Moulin-Baguet-removebg-preview.png",
       title: "Moulin Baguet Rouge",
       subtitle: "AOP COSTIERES DE NÎMES",
       desc: "70%  SYRAH + 30% GRENACHE",
@@ -19,7 +19,7 @@ export const sliderItems = [
     },
     {
       id: 3,
-      img: "https://i.ibb.co/stpKw97/TRUFFES-NOIRES.png",
+      img: "https://i.ibb.co/rtGJLLX/3-Chateau-Bellefontaine-blanc-removebg-preview.png",
       title: "Bellefontaine Blanc",
       subtitle: "AOP COSTIERES DE NÎMES",
       desc: "50%  GRENACHE + 30% ROUSSANE + 20% GRENACHE",

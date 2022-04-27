@@ -63,7 +63,7 @@ const Menu = styled.div`
   width: 50%;
   height: 100vh;
   ${mobile({maxWidth: "80%",
-    height: "100vh", marginRight:"9.5em"})}
+    height: "100vh"})}
 `;
 
 const MenuItem = styled.p`

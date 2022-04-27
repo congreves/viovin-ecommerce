@@ -9,8 +9,7 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Banner />
-      <Slider />
+      <Banner ><Slider /></Banner>
       <ContactForm />
       <Footer />
     </div>
