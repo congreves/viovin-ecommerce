@@ -88,7 +88,7 @@ setNavbarOpen(!navbarOpen)
       <Wrapper>
         <Center>
           <Link to="/" style={linkStyle}>
-            <Logo src="https://i.ibb.co/kDLkfBx/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-removebg-preview.png"></Logo>
+            <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Center>
        <GiHamburgerMenu style={{fontWeight: "200"}}size={44}  onClick={handleToggle}/>
