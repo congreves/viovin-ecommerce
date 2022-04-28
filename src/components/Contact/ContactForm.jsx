@@ -97,7 +97,7 @@ function ContactForm() {
     <div>
       <Container>
       
-        <Form action="https://formsubmit.co/congreves3@gmail.com" method="POST" >
+        <Form action="https://formsubmit.co/info@viovin.se" method="POST" >
           <Title>KONTAKTA OSS</Title>
           <ContactInfo>
             <Label>Namn</Label>

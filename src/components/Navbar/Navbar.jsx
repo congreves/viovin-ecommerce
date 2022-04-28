@@ -63,7 +63,7 @@ const Menu = styled.div`
   width: 60%;
   height: 100vh;
   ${mobile({width: "50%",
-    height: "100vh"})}
+    height: "100vh", overflowX: "hidden"})}
 `;
 
 const MenuItem = styled.p`
@@ -75,7 +75,7 @@ backdrop-filter: blur(50px);
   letter-spacing: 0.05;
   padding: 1em;
   border-bottom: 1px solid #9b753a;
-  ${mobile({ fontSize: "1rem", paddingTop: "0.5em"})}
+  ${mobile({ fontSize: "1rem", paddingTop: "0.5em", overflowX: "hidden"})}
 
 `;
 
