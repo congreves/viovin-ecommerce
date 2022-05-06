@@ -72,7 +72,6 @@ export const Title = styled.h1`
   font-size: 3.5em;
   font-weight: 600;
   font-family: "Fraunces", serif;
-  padding-top: 0.5em;
   letter-spacing: 2px;
   color: white;
 `;
@@ -81,7 +80,7 @@ export const Description = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 2px;
-  padding-top: 2.5em;
+  padding-top: 1em;
   padding-bottom: 2em;
   color: white;
   
