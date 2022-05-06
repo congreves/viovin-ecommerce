@@ -25,7 +25,6 @@ export const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
@@ -35,6 +34,7 @@ export const BannerContainer = styled.div`
 
 export const BannerTitle = styled.h1`
   font-family: "Fraunces", serif;
+  padding-bottom: 0.5em;
   color: #9b753a;
   font-size: 3.5em;
   font-weight: 400;

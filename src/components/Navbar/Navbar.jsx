@@ -64,7 +64,7 @@ const Menu = styled.div`
   width: 75%;
   height: 100vh;
   ${mobile({width: "50%",
-    height: "100vh", overflowX: "hidden"})}
+    height: "100vh", overflowX: "hidden", top: "5em",})}
 `;
 
 const MenuItem = styled.p`
