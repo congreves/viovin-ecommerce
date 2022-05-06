@@ -90,8 +90,8 @@ export const Button = styled.button`
   padding: 20px;
   letter-spacing: 1.5px;
   font-size: 20px;
-  background-color: transparent;
+  background-color: white;
   cursor: pointer;
   border: 1px solid #8c7b61;
-  color: white;
+  color: #8c7b61;
 `;

@@ -48,7 +48,7 @@ import {
               <Subtitle>{item.subtitle}</Subtitle>
                 <Title>{item.title}</Title>
                 <Description>{item.desc}</Description>
-                <Link to="/">
+                <Link to="/viner">
                   <Button>LÄS MER</Button>
                 </Link>
               </InfoContainer>

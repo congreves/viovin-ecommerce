@@ -3,26 +3,27 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://i.ibb.co/kQ3j1dp/4-Chateau-Bellefontaine-rose-removebg-preview.png" ,
-      title: "Bellefontaine Rosé",
-      subtitle: "AOP COSTIERES DE NÎMES",
-      desc: "50%  GRENACHE NOIR + 40% SYRAH + 10% VIOGNIER",
+      img: "https://i.ibb.co/DfDjNQG/TRUFFES-NOIRES.png" ,
+      title: "Domaine des 3 Lys	Rouge - Les Truffes Noires",
+      subtitle: "AOP Côtes du Rhône",
+      desc: "60% Syrah + 30% Grenache + 10% Carignan",
       bg: "fffff",
+    
     },
     {
       id: 2,
-      img: "https://i.ibb.co/VwFZP5X/Moulin-Baguet-removebg-preview.png",
-      title: "Moulin Baguet Rouge",
+      img: "https://i.ibb.co/qdNqs0Y/Chateau-Saint-Be-ne-zet-Moulin-Baguet.png",
+      title: "Moulin Baguet Blanc",
       subtitle: "AOP COSTIERES DE NÎMES",
-      desc: "70%  SYRAH + 30% GRENACHE",
+      desc: "VIOGNIER + 30% GRENACHE BLANC + VERMENTINO",
       bg: "transparent",
     },
     {
       id: 3,
-      img: "https://i.ibb.co/rtGJLLX/3-Chateau-Bellefontaine-blanc-removebg-preview.png",
-      title: "Bellefontaine Blanc",
+      img: "https://i.ibb.co/HGDYZX5/Les-caprices-de-Lola.png",
+      title: "Les Caprices de Lola Rosé",
       subtitle: "AOP COSTIERES DE NÎMES",
-      desc: "50%  GRENACHE + 30% ROUSSANE + 20% GRENACHE",
+      desc: "50%  GRENACHE + 50% SYRAH",
       bg: "transparent",
     },
   ];
