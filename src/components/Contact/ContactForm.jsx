@@ -68,6 +68,15 @@ const Message = styled.div`
  
  
 `;
+const MessageInput = styled.textarea`
+border-style: none;
+width: 100%;
+padding: 1em 1em;
+height: 100%;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: inset -8px -8px 16px rgba(239, 239, 239, 0.35), inset 8px 8px 16px rgba(163, 181, 208, 0.39);
+border-radius: 40px;
+`
 const Button = styled.button`
 width: 50%;
 background-color: transparent;
@@ -121,7 +130,7 @@ function ContactForm() {
           </ContactInfo>
           <Message>
             <Label>Meddelande</Label>
-            <Input placeholder="Lämna ett meddelande här.." type="text" name="meddelande"></Input>
+            <MessageInput placeholder="Lämna ett meddelande här.." type="text" name="meddelande"></MessageInput>
             
           </Message>
           <Button type="submit" value="Submit">SKICKA</Button>

@@ -23,7 +23,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #9b753a;
   align-items: center;
-  ${mobile({ padding: "0.5em 0.5em 0.5em 0em", borderBottom: "none"})}
+  ${mobile({height: "5em", padding: "0.5em 0.5em 0.5em 0em", borderBottom: "none"})}
 `;
 
 const Center = styled.div`
@@ -40,11 +40,12 @@ const linkStyle = {
   letterSpacing: 0.5,
   backgroundColor: "white",
 backdropFilter: "blur(50px)",
+padding:0,
 };
 
 const Logo = styled.img`
   max-height: 10em;
-  ${mobile({ maxHeight: "7.3em"})}
+  ${mobile({ maxHeight: "4.3em"})}
 `;
 
 
@@ -60,7 +61,7 @@ const Menu = styled.div`
   transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(100%)' : 'translateX(250%)'};
   transition: all 0.4s;
   z-index: 100;
-  width: 60%;
+  width: 75%;
   height: 100vh;
   ${mobile({width: "50%",
     height: "100vh", overflowX: "hidden"})}
@@ -69,7 +70,7 @@ const Menu = styled.div`
 const MenuItem = styled.p`
 background-color: white;
 backdrop-filter: blur(50px);
-  font-size: 2.5rem;
+  font-size: 2rem;
   cursor: pointer;
   color: #9b753a;
   letter-spacing: 0.05;
@@ -86,6 +87,7 @@ function Navbar() {
   function handleToggle(){
 setNavbarOpen(!navbarOpen)
 
+
   }
 
   return (
@@ -96,7 +98,7 @@ setNavbarOpen(!navbarOpen)
             <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Center>
-       <GiHamburgerMenu style={{fontWeight: "200"}}size={44}  onClick={handleToggle}/>
+       <GiHamburgerMenu style={{fontWeight: "200" }}size={44}  onClick={handleToggle}/>
         <Menu navbarOpen={navbarOpen}>
           <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
@@ -104,9 +106,11 @@ setNavbarOpen(!navbarOpen)
           <Link to="/viovin" style={linkStyle}>
             <MenuItem>OM OSS</MenuItem>
           </Link>
+          <Link to="/#kontakt-page">
           <MenuItem>
             KONTAKT
           </MenuItem>
+          </Link>
         </Menu>
      
       </Wrapper>

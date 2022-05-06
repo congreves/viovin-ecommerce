@@ -35,15 +35,13 @@ const Info = styled.div`
 
 `;
 const Subtitle = styled.h4`
-padding-bottom: 1.5em;
+padding-bottom: 1em;
 text-transform: uppercase;
 `;
 const Title = styled.h1`
-padding-bottom: 1.5em;
+font-family: "Fraunces", serif;
 `;
 const Year = styled.h2`
-padding-bottom: 1.5em;
-gap: 1.5em;
 
 `;
 const Sort = styled.h3`
@@ -68,7 +66,7 @@ function ProductContainer() {
             <Info>
               <Subtitle>{wine.subtitle}</Subtitle>
               <Title>{wine.title}, {wine.year}</Title>
-              <Year><GiFlatfish/><GiRoastChicken/><GiTomato/></Year>
+              <Year></Year>
               <Sort>{wine.sort}</Sort>
               <Description>{wine.desc}</Description>
             </Info>

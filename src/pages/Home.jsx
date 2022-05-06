@@ -6,11 +6,12 @@ import ContactForm from "../components/Contact/ContactForm";
 import Banner from "../components/Banner/Banner";
 
 function Home() {
+
   return (
     <div>
-      <Navbar />
+      <Navbar id="navbar"/>
       <Banner ><Slider /></Banner>
-      <ContactForm />
+      <ContactForm id="kontakt-page"/>
       <Footer />
     </div>
   );
