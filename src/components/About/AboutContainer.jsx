@@ -23,15 +23,18 @@ function AboutContainer() {
             Frankrike. Våran idé att starta VioVin började med ett stort
             intresse för goda viner och en stor kärlek till landet Frankrike.
             Efter många resor till detta underbara land föddes en tanke att
-            presentera dessa goda viner till Sverige. Nu är våran dröm en
-            verklighet. Företaget har sitt säte i Uppsala och Stockholm. Vi har
-            ett fint samarbete med en etablerad vingård i södra Frankrike i
-            Saint Gilles. Vinerna vi valt att presentera är alla noga utvalda
-            efter kvalitet, smak och hållbar process. VioVin är exklusiv leverantör av dessa viner i Sverige.
+            presentera dessa goda viner till Sverige.
+          </BannerText>
+          <BannerText>
+            Nu är våran dröm en verklighet. Företaget har sitt säte i Uppsala
+            och Stockholm. Vi har ett fint samarbete med en etablerad vingård i
+            södra Frankrike i Saint Gilles. Vinerna vi valt att presentera är
+            alla noga utvalda efter kvalitet, smak och hållbar process. VioVin
+            är exklusiv leverantör av dessa viner i Sverige.
           </BannerText>
           <BannerSubtitle> Vår affärsidé </BannerSubtitle>
           <BannerText>
-          → Presentera goda exklusiva viner. <br></br>→ Leverera i tid.{" "}
+            → Presentera goda exklusiva viner. <br></br>→ Leverera i tid.{" "}
             <br></br>→ Ha en god och personlig kontakt med våra medarbetare och
             kunder.
           </BannerText>
