@@ -49,7 +49,7 @@ function Categories() {
           <Image src={"https://i.ibb.co/KhDmcy7/IMG-7387.jpg"} />
           <Info>
             <Button id="rose" onClick={(e) => setCategoryFilter(e.target.id)}>
-              ROSÉ WINE
+              ROSÉ 
             </Button>
           </Info>
         </CategoryItem>
@@ -59,7 +59,7 @@ function Categories() {
           <Image src={"https://i.ibb.co/64c0HfG/Benezet-84.jpg"} />
           <Info>
             <Button id="red" onClick={(e) => setCategoryFilter(e.target.id)}>
-              RED WINE
+              RÖTT 
             </Button>
           </Info>
         </CategoryItem>
@@ -69,7 +69,7 @@ function Categories() {
           <Image src={"https://i.ibb.co/HtvyF2H/Bellefontaine-37.jpg"} />
           <Info>
             <Button id="white" onClick={(e) => setCategoryFilter(e.target.id)}>
-              WHITE WINE
+              VITT
             </Button>
           </Info>
         </CategoryItem>
