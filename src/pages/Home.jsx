@@ -4,14 +4,21 @@ import Footer from "../components/Footer/Footer";
 import Slider from "../components/Slider/Slider";
 import ContactForm from "../components/Contact/ContactForm";
 import Banner from "../components/Banner/Banner";
+import {
+  BannerSubtitle,
+  BannerText,
+  BannerTitle,
+} from "../components/About/About.styles";
 
 function Home() {
-
   return (
     <div>
-      <Navbar id="navbar"/>
-      <Banner ><Slider /></Banner>
-      <ContactForm id="kontakt-page"/>
+      <Navbar id="navbar" />
+      <Banner>
+        <Slider />
+      </Banner>
+
+      <ContactForm id="kontakt-page" />
       <Footer />
     </div>
   );

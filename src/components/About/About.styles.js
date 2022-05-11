@@ -24,30 +24,39 @@ export const BannerImage = styled.img`
 export const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-left: 5%;
   margin-right: 5%;
   width: 100%;
   height: auto;
-  ${mobile({margin: "0px", padding: "2em 2em",flexWrap: "wrap" })}
+  padding: 1.5em 1.5em;
+  ${mobile({margin: "0px", padding: "1em 1em",flexWrap: "wrap" })}
 `;
 
 export const BannerTitle = styled.h1`
   font-family: "Fraunces", serif;
-  padding-bottom: 0.5em;
   color: #9b753a;
   font-size: 3.5em;
   font-weight: 400;
   text-align: center;
-  ${mobile({ fontSize: "30px", paddingBottom: "1.5em" })}
+  ${mobile({ fontSize: "24px", textAlign: "left" })}
 `;
 
 export const BannerText = styled.h4`
   color: #9b753a;
   font-size: 1.1em;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1.5px;
   line-height: 1.5;
   ${mobile({ fontSize: "16px", })}
 `;
+export const BannerSubtitle = styled.h3`
+font-family: "Fraunces", serif;
+color: #9b753a;
+font-size: 1.5em;
+font-weight: 400;
+text-align: center;
+${mobile({ fontSize: "20px", textAlign: "left" })}
+`;
+
+

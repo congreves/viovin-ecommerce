@@ -94,6 +94,13 @@ min-height: 3rem;
 align-items: center;
 color: #9b753a;
 padding: 1em 1em;
+&:hover,
+&:focus {
+  background-color: #8c7b61;
+  color: white;
+}
+&:active {
+  color: white;
 ${mobile({ width: " 70%", margin: "1em"})}
 `;
 

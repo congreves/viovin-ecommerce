@@ -6,6 +6,7 @@ import {
   BannerImage,
   BannerTitle,
   BannerText,
+  BannerSubtitle,
 } from "./About.styles";
 
 function AboutContainer() {
@@ -16,18 +17,25 @@ function AboutContainer() {
           <BannerImage src="https://i.ibb.co/W0SK5Lp/Bellefontaine-13.jpg"></BannerImage>
         </ImageContainer>
         <BannerContainer>
-          <BannerTitle>Nu är vår dröm en verklighet.</BannerTitle>
+          <BannerTitle>En dröm till verklighet.</BannerTitle>
           <BannerText>
             Vi är ett familjeföretag med familjemedlemmar i både Sverige och
-            Frankrike. Vår idé att starta VioVin började med ett stort intresse
-            för goda viner och en stor kärlek till landet Frankrike. Efter många
-            resor dit föddes tankar på att presentera dess goda viner för
-            Sverige. Nu är vår dröm en verklighet. Företaget har sitt säte i
-            Uppsala och Stockholm. Vi samarbetar med en väletablerad vingård i
-            Saint-Bénézet, södra Frankrike. Vinerna vi valt att presentera är
-            alla noga utvalda efter kvalitet, smak och hållbar process. VioVin
-            är den enda leverantören av dessa franska kvalitetsviner i Sverige.
+            Frankrike. Våran idé att starta VioVin började med ett stort
+            intresse för goda viner och en stor kärlek till landet Frankrike.
+            Efter många resor till detta underbara land föddes en tanke att
+            presentera dessa goda viner till Sverige. Nu är våran dröm en
+            verklighet. Företaget har sitt säte i Uppsala och Stockholm. Vi har
+            ett fint samarbete med en etablerad vingård i södra Frankrike i
+            Saint Gilles. Vinerna vi valt att presentera är alla noga utvalda
+            efter kvalitet, smak och hållbar process. VioVin är exklusiv leverantör av dessa viner i Sverige.
           </BannerText>
+          <BannerSubtitle> Vår affärsidé </BannerSubtitle>
+          <BannerText>
+          → Presentera goda exklusiva viner. <br></br>→ Leverera i tid.{" "}
+            <br></br>→ Ha en godpersonlig kontakt med våra medarbetare och
+            kunder.
+          </BannerText>
+          <BannerText>Välkommen till oss !</BannerText>
         </BannerContainer>
       </Container>
     </div>

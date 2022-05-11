@@ -93,4 +93,13 @@ export const Button = styled.button`
   cursor: pointer;
   border: 1px solid #8c7b61;
   color: #8c7b61;
+
+  &:hover,
+  &:focus {
+    background-color: #8c7b61;
+    color: white;
+  }
+  &:active {
+    color: white;
+  }
 `;

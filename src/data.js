@@ -6,7 +6,7 @@ export const sliderItems = [
       img: "https://i.ibb.co/DfDjNQG/TRUFFES-NOIRES.png" ,
       title: "Domaine des 3 Lys	Rouge - Les Truffes Noires",
       subtitle: "AOP Côtes du Rhône",
-      desc: "60% Syrah + 30% Grenache + 10% Carignan",
+      desc: "Vin som vunnit pris!",
       bg: "fffff",
     
     },
