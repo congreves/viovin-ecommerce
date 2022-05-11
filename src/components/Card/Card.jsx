@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive";
 import { BannerSubtitle, BannerText, BannerTitle } from "../About/About.styles";
+import { ContactItem } from "../Footer/Footer.styles";
 
 
 
@@ -43,8 +44,8 @@ function Card() {
         <BannerText> → Framöver kommer vi även att erbjuda våra viner till
           privatpersoner via Systembolaget.</BannerText>
           <BannerText>Vid övriga frågor är du välkommen att kontakta oss antingen mail eller via telefon.</BannerText>
-          <BannerText> <MailOutlined style={{ marginRight: "0.5em", fontSize: "16px" }}/> info@viovin.se</BannerText>
-          <BannerText> <Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> 0704600560</BannerText>
+          <ContactItem href="mailto: info@viovin.se"> <MailOutlined style={{ marginRight: "0.5em", fontSize: "16px" }}/> info@viovin.se</ContactItem>
+          <ContactItem href="tel:+46704600560"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> 0704600560</ContactItem>
           <BannerText>Välkommen!</BannerText>
           
       </Column>
