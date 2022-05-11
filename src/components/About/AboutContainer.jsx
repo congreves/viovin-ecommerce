@@ -24,8 +24,8 @@ function AboutContainer() {
             intresse för goda viner och en stor kärlek till landet Frankrike.
             Efter många resor till detta underbara land föddes en tanke att
             presentera dessa goda viner till Sverige.
-          </BannerText>
-          <BannerText>
+        <br></br>
+        <br></br>
             Nu är våran dröm en verklighet. Företaget har sitt säte i Uppsala
             och Stockholm. Vi har ett fint samarbete med en etablerad vingård i
             södra Frankrike i Saint Gilles. Vinerna vi valt att presentera är
