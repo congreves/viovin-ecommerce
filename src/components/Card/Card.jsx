@@ -45,8 +45,8 @@ function Card() {
           privatpersoner via Systembolaget.</BannerText>
           <BannerText>Vid övriga frågor är du välkommen att kontakta oss antingen mail eller via telefon.</BannerText>
           <ContactItem href="mailto: info@viovin.se"> <MailOutlined style={{ marginRight: "0.5em", fontSize: "16px" }}/> info@viovin.se</ContactItem>
-          <ContactItem href="tel:+46704600560"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> 0704600560</ContactItem>
-          <ContactItem href="tel:+46704600560"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> 0704600560</ContactItem>
+          <ContactItem href="tel:+46704600560"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> Lisskulla Panossian 0704600560</ContactItem>
+          <ContactItem href="tel:+46708688960"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> Nathalie Panossian 0704600560</ContactItem>
           <BannerText>Välkommen!</BannerText>
           
       </Column>
