@@ -32,7 +32,7 @@ function AboutContainer() {
           <BannerSubtitle> Vår affärsidé </BannerSubtitle>
           <BannerText>
           → Presentera goda exklusiva viner. <br></br>→ Leverera i tid.{" "}
-            <br></br>→ Ha en godpersonlig kontakt med våra medarbetare och
+            <br></br>→ Ha en god och personlig kontakt med våra medarbetare och
             kunder.
           </BannerText>
           <BannerText>Välkommen till oss !</BannerText>

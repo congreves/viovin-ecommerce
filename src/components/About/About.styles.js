@@ -48,6 +48,7 @@ export const BannerText = styled.h4`
   text-align: left;
   letter-spacing: 1.5px;
   line-height: 1.5;
+  padding-top: 1em;
   ${mobile({ fontSize: "16px", })}
 `;
 export const BannerSubtitle = styled.h3`

@@ -1,44 +1,62 @@
-import React, { useState, useEffect } from "react";
-import ProductContainer from "../components/Product/ProductContainer";
-import Navbar from "../components/Navbar/Navbar";
+import { MailOutlined, Phone } from "@mui/icons-material";
+import React from "react";
 import styled from "styled-components";
-import { wineList } from "../data";
-import { useRecoilState } from "recoil";
-import { filterState } from "../stores/atom";
-import {mobile} from "../responsive";
+import { mobile } from "../../responsive";
+import { BannerSubtitle, BannerText, BannerTitle } from "../About/About.styles";
 
-const Categories = styled.div`
+
+
+
+const Container = styled.div`
   display: flex;
-  justify-content: flex-start;
+ 
+`;
+const Column = styled.div`
+ display: flex:
+ flex-direction: column:
+  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset -8px -8px 16px rgba(239, 239, 239, 0.35), inset 8px 8px 16px rgba(163, 181, 208, 0.39);
+  border-radius: 10px;
+  padding: 2em;
+  justify-content: center;
   align-items: center;
-  top: 6em;
-  padding-top: 1.5em;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: transparent;
-  position: sticky;
-  width: 100%;
-  z-index: 99;
-  backdrop-filter: blur(50px);
-  ${mobile({ fontSize: "1rem", top: "3em"})}
+  width: 70%;
+  height: auto;
+  ${mobile({ width: " 100%", padding: "2.5em" })}
+
+ 
 `;
 
-const Filter = styled.ul`
-  display: flex;
-  flex-direction: row;
-  gap: 2em;
-`;
 
-const FilterOption = styled.li`
-  display: flex;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  ${mobile({ fontSize: "1rem"})}
-`;
+function Card() {
+  
+  return (
+    <Container>
+      <Column>
+        <BannerSubtitle>Önskar du att köpa våra viner?</BannerSubtitle>
+        <BannerText>
+        → Vi vänder oss till företag inom restaurang, barer och hotell
+          verksamhet.
+         
+        </BannerText>
+        <BannerText> → Framöver kommer vi även att erbjuda våra viner till
+          privatpersoner via Systembolaget.</BannerText>
+          <BannerText>Vid övriga frågor är du välkommen att kontakta oss antingen mail eller via telefon.</BannerText>
+          <BannerText> <MailOutlined style={{ marginRight: "0.5em", fontSize: "16px" }}/> info@viovin.se</BannerText>
+          <BannerText> <Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> 0704600560</BannerText>
+          <BannerText>Välkommen!</BannerText>
+          
+      </Column>
+    </Container>
+  );
+}
 
-function ProductsPage() {
-  const [filter, setFilter] = useRecoilState(filterState);
+export default Card;
+/*
+
+
+const [filter, setFilter] = useRecoilState(filterState);
   const [categoryFilter, setCategoryFilter] = useState("none");
 
   const filterList = wineList.filter((wine) => {
@@ -46,8 +64,7 @@ function ProductsPage() {
       return true;
     }
     if (wine.category === categoryFilter) {
-      return true
-  
+      return true;
     } else {
       return false;
     }
@@ -124,16 +141,11 @@ function ProductsPage() {
             Rött
           </FilterOption>
         </Filter>
-        {/* <Filter>
-          Producent
-          <FilterOption>A</FilterOption>
-          <FilterOption>B</FilterOption>
-          <FilterOption>C</FilterOption>
-        </Filter> */}
-      </Categories>
-      <ProductContainer />
-    </div>
-  );
-}
-
-export default ProductsPage;
+        {}
+        </Categories>
+        <ProductContainer />
+      </div>
+    );
+  }
+  
+*/ 

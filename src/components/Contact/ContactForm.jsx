@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive"
+import Card from "../Card/Card";
 
 
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   overflow: hidden;
-  padding: 3.5em 0em;
+  gap: 0.5em;
+  padding: 3.5em;
   margin-top: 3.5em;
   border-top: 1px solid #9b753a;
-  ${mobile({ marginTop: "0.5", padding: "0.5em"})}
+  align-items: baseline;
+  ${mobile({ marginTop: "0.5", padding: "0.5em", flexWrap: "wrap", gap: "2em"})}
 `;
 const Form = styled.form`
  display: flex:
@@ -20,11 +23,11 @@ const Form = styled.form`
   background: rgba(255, 255, 255, 0.1);
   box-shadow: inset -8px -8px 16px rgba(239, 239, 239, 0.35), inset 8px 8px 16px rgba(163, 181, 208, 0.39);
   border-radius: 40px;
-  width: 50%;
+  width: 70%;
   padding: 2em;
   justify-content: center;
   align-items: center;
-  ${mobile({ width: " 100%", padding: "0.5em"})}
+  ${mobile({ width: " 100%", padding: "1.5em"})}
 
  
 `;
@@ -34,6 +37,7 @@ const Title = styled.h2`
   justify-content: center;
   font-weight: 200;
   margin: 0;
+  padding-top: 1em;
   ${mobile({ paddingTop: "1.5em"})}
 `;
 const ContactInfo = styled.div`
@@ -112,7 +116,7 @@ function ContactForm() {
   return (
     <div>
       <Container>
-      
+      <Card/>
         <Form action="https://formsubmit.co/info@viovin.se" method="POST" >
           <Title>KONTAKTA OSS</Title>
           <ContactInfo>
@@ -142,7 +146,7 @@ function ContactForm() {
           </Message>
           <Button type="submit" value="Submit">SKICKA</Button>
         </Form>
-       
+    
       </Container>
     </div>
   );

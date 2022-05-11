@@ -93,11 +93,14 @@ export const Button = styled.button`
   cursor: pointer;
   border: 1px solid #8c7b61;
   color: #8c7b61;
+  opacity: 0.8;
 
   &:hover,
   &:focus {
     background-color: #8c7b61;
     color: white;
+    transform: scale(1.02);
+    transition: all .2s ease-in-out;
   }
   &:active {
     color: white;

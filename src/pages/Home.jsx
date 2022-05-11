@@ -9,6 +9,7 @@ import {
   BannerText,
   BannerTitle,
 } from "../components/About/About.styles";
+import Categories from "../components/Categories/Categories";
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
       <Banner>
         <Slider />
       </Banner>
-
+      <Categories/>
       <ContactForm id="kontakt-page" />
       <Footer />
     </div>
