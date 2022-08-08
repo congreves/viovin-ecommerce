@@ -29,8 +29,8 @@ const Wrapper = styled.div`
 const Center = styled.div`
   flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   z-index: 100;
   ${mobile({ justifyContent: "start"})}
 `;
@@ -44,7 +44,7 @@ padding:0,
 };
 
 const Logo = styled.img`
-  max-height: 10em;
+  max-height: 7em;
   ${mobile({ maxHeight: "4.3em"})}
 `;
 
@@ -98,7 +98,7 @@ setNavbarOpen(!navbarOpen)
             <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Center>
-       <GiHamburgerMenu style={{fontWeight: "200" }}size={44}  onClick={handleToggle}/>
+       <GiHamburgerMenu style={{fontWeight: "200" }}size={40}  onClick={handleToggle}/>
         <Menu navbarOpen={navbarOpen}>
           <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>

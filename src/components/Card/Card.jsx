@@ -5,12 +5,8 @@ import { mobile } from "../../responsive";
 import { BannerSubtitle, BannerText, BannerTitle } from "../About/About.styles";
 import { ContactItem } from "../Footer/Footer.styles";
 
-
-
-
 const Container = styled.div`
   display: flex;
- 
 `;
 const Column = styled.div`
  display: flex:
@@ -29,26 +25,40 @@ const Column = styled.div`
  
 `;
 
-
 function Card() {
-  
   return (
     <Container>
       <Column>
         <BannerSubtitle>Önskar du att köpa våra viner?</BannerSubtitle>
         <BannerText>
-        → Vi vänder oss till företag inom restaurang, barer och hotell
+          → Vi vänder oss till företag inom restaurang, barer och hotell
           verksamhet.
-         
         </BannerText>
-        <BannerText> → Framöver kommer vi även att erbjuda våra viner till
-          privatpersoner via Systembolaget.</BannerText>
-          <BannerText>Vid övriga frågor är du välkommen att kontakta oss antingen mail eller via telefon.</BannerText>
-          <ContactItem href="mailto: info@viovin.se"> <MailOutlined style={{ marginRight: "0.5em", fontSize: "16px" }}/> info@viovin.se</ContactItem>
-          <ContactItem href="tel:+46704600560"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> Lisskulla Panossian 0704600560</ContactItem>
-          <ContactItem href="tel:+46708688960"><Phone style={{ marginRight: "0.5em" ,fontSize: "16px" }}/> Nathalie Panossian 0708688960</ContactItem>
-          <BannerText>Välkommen!</BannerText>
-          
+        <BannerText>
+          {" "}
+          → Framöver kommer vi även att erbjuda våra viner till privatpersoner
+          via Systembolaget.
+        </BannerText>
+        <BannerText>
+          Vid övriga frågor är du välkommen att kontakta oss antingen mail eller
+          via telefon.
+        </BannerText>
+        <ContactItem href="mailto: info@viovin.se">
+          {" "}
+          <MailOutlined
+            style={{ marginRight: "0.5em", fontSize: "16px" }}
+          />{" "}
+          info@viovin.se
+        </ContactItem>
+        <ContactItem href="tel:+46704600560">
+          <Phone style={{ marginRight: "0.5em", fontSize: "16px" }} /> Lisskulla
+          Panossian 0704600560
+        </ContactItem>
+        <ContactItem href="tel:+46708688960">
+          <Phone style={{ marginRight: "0.5em", fontSize: "16px" }} /> Nathalie
+          Panossian 0708688960
+        </ContactItem>
+        <BannerText>Välkommen!</BannerText>
       </Column>
     </Container>
   );
@@ -150,4 +160,4 @@ const [filter, setFilter] = useRecoilState(filterState);
     );
   }
   
-*/ 
+*/
