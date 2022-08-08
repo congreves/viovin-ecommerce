@@ -45,6 +45,7 @@ padding:0,
 
 const Logo = styled.img`
   max-height: 7em;
+  cursor: pointer;
   ${mobile({ maxHeight: "4.3em"})}
 `;
 
@@ -63,6 +64,7 @@ const Menu = styled.div`
   z-index: 100;
   width: 75%;
   height: 100vh;
+  cursor: pointer;
   ${mobile({width: "50%",
     height: "100vh", overflowX: "hidden", top: "5em",})}
 `;

@@ -2,41 +2,39 @@ import styled from "styled-components";
 import { mobile } from "../../responsive";
 
 export const Container = styled.div`
-padding-top: 2.5em;
+  padding-top: 2.5em;
   display: flex;
   flex-direction: row;
   gap: 2em;
 
-  ${mobile({ padding: "0px", flexDirection: "column"})}
+  ${mobile({ padding: "0px", flexDirection: "column" })}
 `;
 
 export const CategoryContainer = styled.section`
-display: flex;
-flex-direction: row;
-padding: 2.5em 0em;
-justify-content: space-between;
-gap: 2em;
+  display: flex;
+  flex-direction: row;
+  padding: 2.5em 0em;
+  justify-content: space-between;
+  gap: 2em;
 
-
-
-${mobile({ padding: "0px", flexDirection: "column" , gap: "0em"})}
-
-`
+  ${mobile({ padding: "0px", flexDirection: "column", gap: "0em" })}
+`;
 export const CategoryItem = styled.div`
 
   flex: 1;
   margin: 3px;
   height: 70vh;
   position: relative;
-  opacity: 0.6;
+  opacity: 1;
 
  
 }
   
   &:hover{
-    opacity: 1;
     transform: scale(1.02);
     transition: all .2s ease-in-out;
+    -webkit-filter: brightness(50%);
+   z-index: 100;
   
 }
 `;
@@ -46,7 +44,6 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   object-position: left-top;
-  
 
 
   ${mobile({ height: "20vh", flexDirection: "column" })}
@@ -61,6 +58,7 @@ export const Info = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
 `;
 
 export const Button = styled.button`
@@ -71,6 +69,9 @@ export const Button = styled.button`
   cursor: pointer;
   font-weight: 600;
 
+
+ 
+
   opacity: 0.8;
 
   &:hover,
@@ -78,7 +79,8 @@ export const Button = styled.button`
     background-color: #8c7b61;
     color: white;
     transform: scale(1.02);
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 1000;
   }
   &:active {
     color: white;
