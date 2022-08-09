@@ -4,7 +4,6 @@ import {
   Wrapper,
   Left,
   Logo,
-  Center,
   Right,
   Title,
   ContactItem,
@@ -27,7 +26,7 @@ function Footer() {
             <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Left>
-        <Center></Center>
+
         <Right>
           <Title>KONTAKT</Title>
           <ContactItem href="tel:+46704600560">
