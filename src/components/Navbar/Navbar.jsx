@@ -46,7 +46,7 @@ padding:0,
 const Logo = styled.img`
   max-height: 4em;
   cursor: pointer;
-  ${mobile({ maxHeight: "4.3em"})}
+  ${mobile({ maxHeight: "4em"})}
 `;
 
 
@@ -96,7 +96,7 @@ setNavbarOpen(!navbarOpen)
     <Container>
       <Wrapper>
         <Center>
-          <Link to="/" style={linkStyle}>
+          <Link to="/" >
             <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Center>
