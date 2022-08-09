@@ -11,7 +11,7 @@ function Home() {
       <Navbar id="navbar" />
       <Banner></Banner>
       <Categories />
-      <ContactForm id="kontakt-page" />
+   <ContactForm/>
       <Footer />
     </div>
   );

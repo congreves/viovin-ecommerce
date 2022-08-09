@@ -18,7 +18,7 @@ const Column = styled.div`
   padding: 2em;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 100%;
   height: auto;
   ${mobile({ width: " 100%", padding: "2.5em" })}
 

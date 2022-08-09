@@ -11,7 +11,7 @@ const Categories = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  top: 6em;
+  top: 4em;
   padding-top: 1.5em;
   padding-left: 5%;
   padding-right: 5%;
@@ -124,12 +124,7 @@ function ProductsPage() {
             Rött
           </FilterOption>
         </Filter>
-        {/* <Filter>
-          Producent
-          <FilterOption>A</FilterOption>
-          <FilterOption>B</FilterOption>
-          <FilterOption>C</FilterOption>
-        </Filter> */}
+        {}
       </Categories>
       <ProductContainer />
     </div>

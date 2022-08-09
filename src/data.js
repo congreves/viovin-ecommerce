@@ -1,34 +1,5 @@
 
-
-export const sliderItems = [
-    {
-      id: 1,
-      img: "https://i.ibb.co/DfDjNQG/TRUFFES-NOIRES.png" ,
-      title: "Domaine des 3 Lys	Rouge - Les Truffes Noires",
-      subtitle: "AOP Côtes du Rhône",
-      desc: "Vin som vunnit pris!",
-      bg: "fffff",
-    
-    },
-    {
-      id: 2,
-      img: "https://i.ibb.co/qdNqs0Y/Chateau-Saint-Be-ne-zet-Moulin-Baguet.png",
-      title: "Moulin Baguet Blanc",
-      subtitle: "AOP COSTIERES DE NÎMES",
-      desc: "VIOGNIER + 30% GRENACHE BLANC + VERMENTINO",
-      bg: "transparent",
-    },
-    {
-      id: 3,
-      img: "https://i.ibb.co/HGDYZX5/Les-caprices-de-Lola.png",
-      title: "Les Caprices de Lola Rosé",
-      subtitle: "AOP COSTIERES DE NÎMES",
-      desc: "50%  GRENACHE + 50% SYRAH",
-      bg: "transparent",
-    },
-  ];
-
-  export const wineList = [
+export const wineList = [
     {
       id: 0,
       img: "https://i.ibb.co/JxwdD9X/4-Chateau-Bellefontaine-rose.jpg",

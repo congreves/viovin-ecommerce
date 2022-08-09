@@ -17,7 +17,7 @@ const Container = styled.div`
 
 `;
 const Wrapper = styled.div`
-  height: 8em;
+  height: 5em;
   padding: 1em 1em;
   display: flex;
   justify-content: space-between;
@@ -44,7 +44,7 @@ padding:0,
 };
 
 const Logo = styled.img`
-  max-height: 7em;
+  max-height: 4em;
   cursor: pointer;
   ${mobile({ maxHeight: "4.3em"})}
 `;
@@ -54,7 +54,7 @@ const Menu = styled.div`
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 8em;
+  top: 4em;
   background-color: white;
   backdrop-filter: blur(50px);
   padding: 1.5em 1.5em;
@@ -100,7 +100,7 @@ setNavbarOpen(!navbarOpen)
             <Logo src="https://i.ibb.co/4s13XB2/Dore-Baguette-Couronne-Ico-ne-de-Cercle-Clerge-Logo-2-1.png"></Logo>
           </Link>
         </Center>
-       <GiHamburgerMenu style={{fontWeight: "200" }}size={40}  onClick={handleToggle}/>
+       <GiHamburgerMenu style={{fontWeight: "200" }}size={30}  onClick={handleToggle}/>
         <Menu navbarOpen={navbarOpen}>
           <Link to="/viner" style={linkStyle}>
             <MenuItem>VÅRA VINER</MenuItem>
@@ -108,7 +108,7 @@ setNavbarOpen(!navbarOpen)
           <Link to="/viovin" style={linkStyle}>
             <MenuItem>OM OSS</MenuItem>
           </Link>
-          <Link to="/#kontakt-page">
+          <Link to="/#kontakt-page" style={linkStyle}>
           <MenuItem>
             KONTAKT
           </MenuItem>
