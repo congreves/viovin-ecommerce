@@ -36,8 +36,7 @@ function Card() {
         </BannerText>
         <BannerText>
           {" "}
-          → Framöver kommer vi även att erbjuda våra viner till privatpersoner
-          via Systembolaget.
+          → Vi kan nu erbjuda våra viner till privatpersoner via Systembolagets hemsida.
         </BannerText>
         <BannerText>
           Vid övriga frågor är du välkommen att kontakta oss antingen mail eller
@@ -50,9 +49,9 @@ function Card() {
           />{" "}
           info@viovin.se
         </ContactItem>
-        <ContactItem href="tel:+46704600560">
+        <ContactItem href="tel:+46708890503">
           <Phone style={{ marginRight: "0.5em", fontSize: "16px" }} /> Lisskulla
-          Panossian 0704600560
+          Panossian 0708890503
         </ContactItem>
         <ContactItem href="tel:+46708688960">
           <Phone style={{ marginRight: "0.5em", fontSize: "16px" }} /> Nathalie
@@ -65,99 +64,3 @@ function Card() {
 }
 
 export default Card;
-/*
-
-
-const [filter, setFilter] = useRecoilState(filterState);
-  const [categoryFilter, setCategoryFilter] = useState("none");
-
-  const filterList = wineList.filter((wine) => {
-    if (categoryFilter === "none") {
-      return true;
-    }
-    if (wine.category === categoryFilter) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-
-  useEffect(() => {
-    setFilter(filterList);
-  }, [categoryFilter]);
-
-  return (
-    <div>
-      <Navbar />
-      <Categories>
-        <Filter>
-          <FilterOption
-            onClick={() => setCategoryFilter("none")}
-            style={
-              categoryFilter === "none"
-                ? {
-                    color: "#9B753A",
-                    fontWeight: "600",
-                    textDecoration: "underline",
-                  }
-                : {}
-            }
-          >
-           Alla
-          </FilterOption>
-
-          <FilterOption
-            id="white"
-            onClick={(e) => setCategoryFilter(e.target.id)}
-            style={
-              categoryFilter === "white"
-                ? {
-                    color: "#9B753A",
-                    fontWeight: "600",
-                    textDecoration: "underline",
-                  }
-                : {}
-            }
-          >
-            Vitt
-          </FilterOption>
-          <FilterOption
-            id="rose"
-            onClick={(e) => setCategoryFilter(e.target.id)}
-            style={
-              categoryFilter === "rose"
-                ? {
-                    color: "#9B753A",
-                    fontWeight: "600",
-                    textDecoration: "underline",
-                  }
-                : {}
-            }
-          >
-            Rosé
-          </FilterOption>
-
-          <FilterOption
-            id="red"
-            onClick={(e) => setCategoryFilter(e.target.id)}
-            style={
-              categoryFilter === "red"
-                ? {
-                    color: "#9B753A",
-                    fontWeight: "600",
-                    textDecoration: "underline",
-                  }
-                : {}
-            }
-          >
-            Rött
-          </FilterOption>
-        </Filter>
-        {}
-        </Categories>
-        <ProductContainer />
-      </div>
-    );
-  }
-  
-*/

@@ -29,9 +29,9 @@ function Footer() {
 
         <Right>
           <Title>KONTAKT</Title>
-          <ContactItem href="tel:+46704600560">
+          <ContactItem href="tel:+46708890503">
             <Phone style={{ marginRight: "10px" }} />
-            Lisskulla Panossian: 0704600560
+            Lisskulla Panossian: 0708890503
           </ContactItem>
           <ContactItem href="tel:+46708688960">
             <Phone style={{ marginRight: "10px" }} />
