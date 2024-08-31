@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive";
+import {hero} from "../../assets/index";
 
 
 const BannerContainer = styled.div`
   height: 70vh;
-  background: url("https://i.ibb.co/5LQK0bf/martin-katler-n-Wx-Up-Ryxs0-unsplash.jpg");
+  background:linear-gradient(0deg, rgba(26, 44, 35, 0.9), rgba(53, 74, 59, 0.3)), url(${hero}); 
   background-position: left center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +24,7 @@ const BannerText = styled.h1`
   margin-left: 5%;
   margin-right: 5%;
   font-family: "Fraunces", serif;
-  color: white;
+  color: #f9f7f7;
   font-size: 2.5rem;
   font-weight: 200;
   font-style: italic;
@@ -38,7 +39,7 @@ function Banner() {
         <BannerImage>
           <BannerText>
             Vi distribuerar vin av finaste kvalitet, noga utvalda från södra
-            Frankrike
+            Frankrike.
           </BannerText>
         </BannerImage>
       </BannerContainer>

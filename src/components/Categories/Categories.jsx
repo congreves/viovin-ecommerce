@@ -12,6 +12,7 @@ import Description from "../Description/Description";
 import { useRecoilState } from "recoil";
 import { filterState } from "../../stores/atom";
 import { Link } from "react-router-dom";
+import { red, white, rose } from "../../assets/index"
 
 const linkStyle = {
   textDecoration: "none",
@@ -30,6 +31,7 @@ function Categories() {
     }
     if (wine.category === categoryFilter) {
       return true;
+      
     } else {
       return false;
     }
@@ -40,13 +42,16 @@ function Categories() {
   }, [categoryFilter]);
 
   return (
+    
     <Container>
+     
+      
       <Description />
       <Link to="/viner" style={linkStyle}>
       <CategoryContainer>
-        
+     
         <CategoryItem>
-          <Image src={"https://i.ibb.co/KhDmcy7/IMG-7387.jpg"} />
+          <Image src={rose} />
           <Info>
             <Button id="rose" onClick={(e) => setCategoryFilter(e.target.id)}>
               ROSÉ 
@@ -56,7 +61,7 @@ function Categories() {
        
        
         <CategoryItem>
-          <Image src={"https://i.ibb.co/64c0HfG/Benezet-84.jpg"} />
+          <Image src={red} />
           <Info>
             <Button id="red" onClick={(e) => setCategoryFilter(e.target.id)}>
               RÖTT 
@@ -66,7 +71,7 @@ function Categories() {
 
 
         <CategoryItem>
-          <Image src={"https://i.ibb.co/HtvyF2H/Bellefontaine-37.jpg"} />
+          <Image src={white} />
           <Info>
             <Button id="white" onClick={(e) => setCategoryFilter(e.target.id)}>
               VITT
@@ -75,6 +80,7 @@ function Categories() {
         </CategoryItem>
        
       </CategoryContainer>
+     
       </Link>
     </Container>
   );

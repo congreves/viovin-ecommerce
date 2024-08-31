@@ -8,13 +8,14 @@ import {
   BannerText,
   BannerSubtitle,
 } from "./About.styles";
+import {about} from "../../assets/index"
 
 function AboutContainer() {
   return (
     <div>
       <Container>
         <ImageContainer>
-          <BannerImage src="https://i.ibb.co/W0SK5Lp/Bellefontaine-13.jpg"></BannerImage>
+          <BannerImage src={about}></BannerImage>
         </ImageContainer>
         <BannerContainer>
           <BannerTitle>En dröm till verklighet.</BannerTitle>
