@@ -4,6 +4,7 @@ import Footer from "../components/Footer/Footer";
 import ContactForm from "../components/Contact/ContactForm";
 import Banner from "../components/Banner/Banner";
 import Categories from "../components/Categories/Categories";
+import GoToTop from "./GoToTop";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <Banner></Banner>
       <Categories />
    <ContactForm/>
+   <GoToTop/>
       <Footer />
     </div>
   );

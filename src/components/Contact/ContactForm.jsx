@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { mobile } from "../../responsive";
 import Card from "../Card/Card";
-import axios from "axios";
+
 
 const Container = styled.div`
   display: flex;

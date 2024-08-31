@@ -26,9 +26,6 @@ export const CategoryItem = styled.div`
   height: 70vh;
   position: relative;
   opacity: 1;
-
- 
-}
   
   &:hover{
     transform: scale(1.02);

@@ -5,7 +5,8 @@ import styled from "styled-components";
 import { wineList } from "../data";
 import { useRecoilState } from "recoil";
 import { filterState } from "../stores/atom";
-import {mobile} from "../responsive";
+import { mobile } from "../responsive";
+
 
 const Categories = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ const Categories = styled.div`
   width: 100%;
   z-index: 99;
   backdrop-filter: blur(50px);
-  ${mobile({ fontSize: "1rem", top: "3em"})}
+  ${mobile({ fontSize: "1rem", top: "3em" })}
 `;
 
 const Filter = styled.ul`
@@ -34,7 +35,7 @@ const FilterOption = styled.li`
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  ${mobile({ fontSize: "1rem"})}
+  ${mobile({ fontSize: "1rem" })}
 `;
 
 function ProductsPage() {
@@ -46,8 +47,7 @@ function ProductsPage() {
       return true;
     }
     if (wine.category === categoryFilter) {
-      return true
-  
+      return true;
     } else {
       return false;
     }
@@ -74,7 +74,7 @@ function ProductsPage() {
                 : {}
             }
           >
-           Alla
+            Alla
           </FilterOption>
 
           <FilterOption

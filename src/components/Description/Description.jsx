@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components";
-import { BannerText } from '../About/About.styles';
 import { mobile } from "../../responsive";
 import { Link } from 'react-router-dom';
 
@@ -23,7 +22,7 @@ font-size: 2.5em;
   font-weight: 200;
   margin: 0;
   padding-top: 1em;
-  color; #9b753a;
+  color: #9b753a;
   
   margin-left: 5%;
   
